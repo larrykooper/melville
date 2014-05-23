@@ -1,0 +1,5 @@
+nohup.out
+.DS_Store
+dump.rdb
+npm-debug.log
+database.json
