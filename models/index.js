@@ -1,4 +1,4 @@
-var config = require('./config');
+var config = require('../config');
 var db_conn;
 
 if (!global.hasOwnProperty('db')) {
