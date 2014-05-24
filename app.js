@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 // Now we require the route logic
+var posts = require('./routes/posts');
 var routes = require('./routes/index');
 var user = require('./routes/user');
 var db = require('./models');
@@ -25,6 +26,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes are here
 app.get('/', routes.index);
+app.get('/post', posts.form);
+app.post('/post', posts.submit);
 app.post('/users/create', user.create)
 
 /// catch 404 and forwarding to error handler
