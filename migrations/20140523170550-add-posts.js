@@ -11,11 +11,11 @@ module.exports = {
                 title: DataTypes.TEXT,
                 body:  DataTypes.TEXT,
                 status: DataTypes.STRING,
-                user_id: {type: 'int'},
-                created_at: {
+                user_id: DataTypes.INTEGER,
+                createdAt: {
                     type: DataTypes.DATE
                 },
-                updated_at: {
+                updatedAt: {
                     type: DataTypes.DATE
                 }
         })
