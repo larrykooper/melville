@@ -38,7 +38,6 @@ if (!global.hasOwnProperty('db')) {
     global.db.User.hasMany(global.db.SomethingElse)
   */
   
-  
   //for more on assoc see http://sequelizejs.com/articles/express
   
 }
