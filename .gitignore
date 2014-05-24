@@ -4,3 +4,4 @@ dump.rdb
 npm-debug.log
 database.json
 config/config.json
+config.js
